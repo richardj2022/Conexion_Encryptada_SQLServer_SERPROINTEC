@@ -24,9 +24,7 @@ namespace Conexion_Encryptada_SQLServer_SERPROINTEC.Librerias
             dbcnString = root.Attributes[0].Value;
             CnString = (aes.Decrypt(dbcnString, appPwdUnique, int.Parse("256")));
             return CnString;
-
         }
-
         internal class label
         {
 
