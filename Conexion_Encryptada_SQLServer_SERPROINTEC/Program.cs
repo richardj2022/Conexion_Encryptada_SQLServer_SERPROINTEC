@@ -16,7 +16,7 @@ namespace Conexion_Encryptada_SQLServer_SERPROINTEC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Conexion.ConexionManual());
         }
     }
 }

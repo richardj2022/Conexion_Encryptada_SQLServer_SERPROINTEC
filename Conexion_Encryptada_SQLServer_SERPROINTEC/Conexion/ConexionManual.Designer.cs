@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Conexion = new System.Windows.Forms.Button();
             this.txtCnString = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -45,19 +45,20 @@
     " que contendra\r\ntu conexion Encryptada. Ahora tu conexion es mas Segura ante Pos" +
     "ibles hackers\r\n";
             // 
-            // button1
+            // Btn_Conexion
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 173);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(315, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Generar cadena de conexion";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Btn_Conexion.BackColor = System.Drawing.Color.Black;
+            this.Btn_Conexion.FlatAppearance.BorderSize = 0;
+            this.Btn_Conexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Conexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Conexion.ForeColor = System.Drawing.Color.White;
+            this.Btn_Conexion.Location = new System.Drawing.Point(12, 173);
+            this.Btn_Conexion.Name = "Btn_Conexion";
+            this.Btn_Conexion.Size = new System.Drawing.Size(315, 34);
+            this.Btn_Conexion.TabIndex = 4;
+            this.Btn_Conexion.Text = "Generar cadena de conexion";
+            this.Btn_Conexion.UseVisualStyleBackColor = false;
+            this.Btn_Conexion.Click += new System.EventHandler(this.Btn_Conexion_Click);
             // 
             // txtCnString
             // 
@@ -86,10 +87,11 @@
             this.ClientSize = new System.Drawing.Size(647, 216);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCnString);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Btn_Conexion);
             this.Controls.Add(this.label2);
             this.Name = "ConexionManual";
             this.Text = "ConexionManual";
+            this.Load += new System.EventHandler(this.ConexionManual_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,7 +100,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Conexion;
         private System.Windows.Forms.TextBox txtCnString;
         private System.Windows.Forms.Label label3;
     }

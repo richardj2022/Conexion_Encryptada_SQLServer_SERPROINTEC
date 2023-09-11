@@ -53,12 +53,6 @@
     <Compile Include="Conexion\ConexionManual.Designer.cs">
       <DependentUpon>ConexionManual.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Librerias\Desencryptacion.cs" />
     <Compile Include="Librerias\Encryptacion.cs" />
     <Compile Include="Program.cs" />
